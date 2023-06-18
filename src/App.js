@@ -52,11 +52,17 @@ const markDone= (id) =>{
 
 //cancel update 
 const cancelUpdate= (id) =>{
-  setUpdateData('') ;
+  setUpdateData('');
 }
+
 //change task for update
 const changeTask= (e) =>{
-  //
+  let newEntry={
+    id: updateData.id ,
+    title: e.target.value ,
+    status:updateData.status ? true : false
+  }
+  setUpdateData(newEntry);
 }
 
 //update task
@@ -78,7 +84,7 @@ const updateTask= () =>{
     <input
     value={updateData && updateData.title }
     onChange={ (e) => changeTask(e)}
-    className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring focus:border-blue-500" />
+    className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring focus:border-blue-500 text-black" />
   </div>
   <div className="mt-4 sm:mt-0 sm:ml-3">
     <button className="px-4  py-2 bg-green-500 text-white rounded-lg focus:outline-none focus:ring focus:border-green-500 hover:bg-green-600 mr-2 sm:mr-0 mb-2 sm:mb-0">Update</button>
@@ -93,7 +99,7 @@ const updateTask= () =>{
     <input 
     value={newTask}
     onChange={(e) => setNewTask (e.target.value)}
-    className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring focus:border-blue-500" />
+    className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring focus:border-blue-500 text-black" />
   </div>
   <div className="ml-2 mt-2 sm:mt-0 flex-shrink-0">
     <button 
@@ -130,10 +136,10 @@ const updateTask= () =>{
 
 {task.status ? null : (
   <span title=" Edit "
-               onClick={() => setUpdateData({ 
+               onClick={ () => setUpdateData({ 
                id: task.id,
                title: task.title,
-               status: task.status ? true: false
+               status: task.status ? true : false
               })}
   > <FontAwesomeIcon icon={faPen}/> </span>
 )}
