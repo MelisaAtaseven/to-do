@@ -1,5 +1,5 @@
 
-This project was bootstrapped with [This Project](https://to-do-sand-chi.vercel.app/ ).
+[Visit Project](https://to-do-sand-chi.vercel.app/ ).
 
 # Getting Started with Create React App
 
