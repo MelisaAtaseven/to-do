@@ -1,5 +1,16 @@
-## [Visit The Project](https://to-do-sand-chi.vercel.app/)
 
+# To Do App
+
+Bu proje, basit bir görev yönetimi uygulaması olan "To Do App"i oluşturmayı amaçlamaktadır. Uygulama, kullanıcının yapılacak görevleri ekleyebilmesini, güncelleyebilmesini, işaretleyebilmesini ve silebilmesini sağlar.  [Proje Link](https://to-do-sand-chi.vercel.app/)
+
+## Özellikler
+
+- Yeni görev ekleme: Kullanıcı, bir görevin başlığını girerek yeni bir görev ekleyebilir.
+- Görev güncelleme: Kullanıcı, mevcut bir görevin başlığını değiştirerek görevi güncelleyebilir.
+- Görev tamamlama: Kullanıcı, bir görevi tamamlandı olarak işaretleyebilir veya işaretini kaldırabilir.
+- Görev silme: Kullanıcı, tamamlanmış veya tamamlanmamış bir görevi silebilir.
+- Görevleri filtreleme: Kullanıcı, tamamlanmış veya tamamlanmamış görevleri filtreleyerek istediği şekilde görüntüleyebilir.
+- Tüm görevleri silme: Kullanıcı, tüm görevleri toplu olarak silebilir.
 
 https://github.com/MelisaAtaseven/to-do/assets/91883445/c8bca606-f1ea-458a-b943-5fc2cc797909
 
